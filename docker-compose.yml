@@ -1,0 +1,10 @@
+version: '3'
+services:
+    flask:
+        build: .
+        ports:
+            - "8888:8888"
+        volumes:
+            - .:/app
+        devices:
+            - /dev/video0:/dev/video0
